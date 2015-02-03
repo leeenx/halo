@@ -1,0 +1,1 @@
+halo.add("randomsort",function(a,b){if(a.length<=0)return a;b=parseInt(b)||0;var c=[],d=[],e=a.length,f=e;0>=b&&(b=e);for(var g=0;e>g;++g)c[g]=g;for(;f>0&&b;){var h=parseInt(Math.random()*f);d[e-f]=a[c.splice(h,1)],--f,--b}return d});

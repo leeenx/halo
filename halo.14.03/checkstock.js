@@ -1,0 +1,1 @@
+halo.use("jsonp",function(a){halo.add("checkstock",function(b,c){a.jsonp({url:"http://st.3.cn/gds.html",data:{originid:"3",id:b,skuid:b,provinceid:1,cityid:72,areaid:4139,townid:0,sortid1:0,sortid2:0,sortid3:0,ch:navigator.userAgent.toLowerCase().indexOf("micromessenger")?5:4,t:Math.random()},callback:function(a){"function"==typeof c&&a.stock&&c(a.stock)}})})});

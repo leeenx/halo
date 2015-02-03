@@ -1,0 +1,1 @@
+halo.use("jsonp",function(a){halo.add("querybooknum",function(b,c){b&&a.jsonp({url:"http://yushou.jd.com/youshouinfo.action",data:{sku:b,g_ty:"ls"},callback:function(a){var b=a.num;"function"==typeof c&&c(b,a)}})})});
