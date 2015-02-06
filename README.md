@@ -248,3 +248,5 @@ halo.use(function(m){
 });
 //有时js动态生成css3动画，可以借用这个方法把样式加入页面
 </pre>
+
+[点击查看更多](http://leeenx.github.io/halo/)
