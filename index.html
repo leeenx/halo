@@ -67,7 +67,7 @@ halo.js 的作用是将分散的多个模块打包成一个文件加载到页面
 
 <table width="100%">
     <tr>
-        <th width="100">参数说明：</th>
+        <th width="250">参数说明：</th>
         <th></th>
     </tr>
     <tr>
@@ -125,6 +125,164 @@ halo.use(function(m){
     });
     m.off(button,'click');//完成解绑
 });
+</pre>
+
+<p><strong>config</strong></p>
+
+<p>方法，配置 halo.js 的参数<br>
+语法：<code>halo.config(settings);</code><br>
+settings object类型，halo.js的配置对象，具体成员如下：</p>
+
+<table width="100%">
+    <tr>
+        <th width="100">成员介绍</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>DOM</td>
+        <td>必选，要解绑事件的 DOM 节点</td>
+    </tr>
+    <tr>
+        <td>event</td>
+        <td>必选，要解绑的事件名。可以是原生事件，也可以是封装的定制事件</td>
+    </tr>
+    <tr>
+        <td>callback</td>
+        <td>必选，事件函数</td>
+    </tr>
+    <tr>
+        <td>capture</td>
+        <td>可选，boolean 类型，表示事件的传递方法是捕获还是冒泡方法</td>
+    </tr>
+</table>  
+
+<pre>
+/*example*/
+halo.config({combo:true,wait:true,version:'20141111'}).use(function(m){
+    m.off(DOM,'flick',function(){alert('flick');},false);
+    //todo
+});
+</pre>
+
+<p><strong>addClass</strong></p>
+
+<p>方法，为指定的 DOM 添加样式<br>
+语法：<code>m.addClass(DOM,string)</code></p>
+
+<table width="100%">
+    <tr>
+        <th width="100">参数说明：</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>DOM</td>
+        <td>必选，目标 DOM 节点</td>
+    </tr>
+    <tr>
+        <td>string</td>
+        <td>必选，样式名</td>
+    </tr>
+</table>  
+
+<pre>
+/*example*/
+halo.use(function(m){
+    m.addClass(button,'red');
+    //todo
+});
+</pre>
+
+<p><strong>removeClass</strong></p>
+
+<p>方法，为指定的 DOM 移动样式<br>
+语法：<code>m.removeClass(DOM,string)</code></p>
+
+<table width="100%">
+    <tr>
+        <th width="100">参数说明：</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>DOM</td>
+        <td>必选，目标 DOM 节点</td>
+    </tr>
+    <tr>
+        <td>string</td>
+        <td>必选，样式名</td>
+    </tr>
+</table> 
+
+<pre>
+/*example*/
+halo.use(function(m){
+    m.removeClass(button,'red');
+    //todo
+});
+</pre>
+
+<p><strong>hasClass</strong></p>
+
+<p>方法，判断指定的 DOM 有无此样式<br>
+语法：m.hasClass(DOM,string);</p>
+
+<table width="100%">
+    <tr>
+        <th width="100">参数说明：</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>DOM</td>
+        <td>必选，目标 DOM 节点</td>
+    </tr>
+    <tr>
+        <td>string</td>
+        <td>必选，样式名</td>
+    </tr>
+</table> 
+
+<pre>
+/*example*/
+halo.use(function(m){
+    if(m.hasClass('red')){
+        //todo
+    }
+});
+</pre>
+
+<p><strong>stylesheet</strong></p>
+
+<p>方法，动态添加样式片<br>
+语法：<code>m.stylesheet(string)</code></p>
+
+<table width="100%">
+    <tr>
+        <th width="100">参数说明：</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>string</td>
+        <td>必选，样式片段</td>
+    </tr>
+</table> 
+
+<pre>
+/*example*/
+halo.use(function(m){
+    m.stylesheet('.red{color:#ff0000;}');
+});
+//有时js动态生成css3动画，可以借用这个方法把样式加入页面
+</pre>
+
+<p><strong>webkit</strong></p>
+
+<p>属性，返回当浏览器的特征css 前缀</p>
+
+<pre>
+/*example*/
+halo.use(function(m){
+    alert('你当前的浏览器的css3前缀是：'+m.webkit);
+});
+//有时js动态生成css3动画，可以借用这个方法把样式加入页面
 </pre>
         </section>
 
