@@ -76,6 +76,7 @@ halo.use('uievent','pageinvite',function(m){
 })
 </pre>
 
+<<<<<<< HEAD
 DEMO：[点击查看pageinvite翻页](http://jdc.jd.com/halo/demo/pageinvite.html)
 
 ------------------------------------------------------
@@ -274,3 +275,10 @@ pager.move(3);//翻到第4页
 视具体情况来使用 touchdrag，如果是双向滚动建议直接用 pagedrag，四向滚动可以考虑用 pagedrag 的嵌套形式实现四向滚动。*
 
 DEMO：[点击查看touchdrag翻页](http://jdc.jd.com/halo/demo/touchpage.html)
+=======
+| Item      |    Value | Qty  |
+| :--| --:| :--: |
+| Computer  | 1600 USD |  5   |
+| Phone     |   12 USD |  12  |
+| Pipe      |    1 USD | 234  |
+>>>>>>> 84e330de7055d5c8078cb05817703d2c66ca93b7

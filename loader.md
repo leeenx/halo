@@ -228,3 +228,6 @@ halo.use('ezloader',function(m){
 DEMO：[点击查看 ezloader](http://jdc.jd.com/halo/demo/ezloader.html)
 
 ---------------------------------------------------------------------------
+
+
+
