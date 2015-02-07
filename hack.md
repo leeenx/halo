@@ -52,3 +52,5 @@ halo.use('mi3hack',function(m){
 DEMO: [点击查看 androidweixinfonthack](http://jdc.jd.com/halo/demo/androidweixinfonthack.html)
 
 ----------------------------------------------------------------------
+
+[点击查看说明目录](https://github.com/leeenx/halo/blob/master/manual.md)
