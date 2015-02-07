@@ -374,3 +374,7 @@ halo.use('uievent','enablea',function(m){
 
 >必须依赖: uievent
 enablea只有在页面的click事件被阻止后才会生效。
+
+--------------------------------------------------------------------------
+
+[点击查看说明目录](https://github.com/leeenx/halo/blob/master/manual.md)
