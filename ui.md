@@ -326,3 +326,4 @@ DEMO：[点击查看 actbox](http://jdc.jd.com/halo/demo/actbox.html)
 -----------------------------------------------------------------------
 
 
+[点击查看说明目录](https://github.com/leeenx/halo/blob/master/manual.md)
