@@ -17,7 +17,7 @@ halo.js的核心文件是参考yui的模块加载的方式编写的。因为没�
 
 目前有两个版本halo.14.03.js与halo.14.05.js两个版本，最新的是halo.14.05.js
 
-** combo服务**
+**combo服务**
 
 目前使用static.paipaiimg.com域名下的combo服务，因为业务迁移原因，combo服务可能在2015年被停用。
 
