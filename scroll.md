@@ -155,3 +155,5 @@ halo.use( 'lazyshow' , function(m){
 DEMO: [点击查看 lazyshow](http://jdc.jd.com/halo/demo/tabdata.html)
 
 -----------------------------------------------------------------------
+
+[点击查看说明目录](https://github.com/leeenx/halo/blob/master/manual.md)
