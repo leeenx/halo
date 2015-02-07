@@ -202,5 +202,4 @@ api: [点击查看接口api](http://legos.cm.com/ci.php/api/#id=20333)
 -----------------------------------------------------------------------
 
 
-
-
+[点击查看说明目录](https://github.com/leeenx/halo/blob/master/manual.md)
