@@ -17,9 +17,8 @@ halo.use(function(m){
 			//表示支持document.readyState的浏览器
 			var chkComplete=function(){
 				if("complete"!=document.readyState){
-					var _arguments=arguments;
 					setTimeout(function(){
-						_arguments.callee();
+						chkComplete();
 					},300);
 					return ;
 				}
